@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+  
+
+  <script src="https://kit.fontawesome.com/46ca7f7c08.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="/assets/index-dab80da2.css">
+</head>
+<body>
+
+  <div id="wrapper" class="w-[100vw] h-[100vh] overflow-x-hidden overflow-y-scroll bg-home flex flex-col justify-between items-center">
+    <!-- header  -->
+    <div class="w-full h-[4rem] flex flex-row justify-between items-center relative mt-[1.6rem]
+      header">
+
+      <img src="/assets/logo-43040818.svg" alt="" class="ml-3">
+
+      <div class="w-[476px] bg-slate-300 absolute left-[167px] h-[0.96px] z-10
+       bar"></div>
+
+      <div class="w-[836.59px] h-[92px] flex bg-blur justify-center items-center
+       blurBox">
+        <ul class="w-[546px] h-full flex justify-center items-center gap-[3rem]
+         navBox">
+          <a href="./index.html" class="text-[#D0D6F9] h-full flex gap-[6px] items-center border-b-2 border-white"><span class="font-bold text-white ">00</span> HOME</a>
+          <a href="./destination-moon.html" class="text-[#D0D6F9]" ><span class="font-bold text-white ">01</span> DESTINATION</a>
+          <a href="./crew-commander.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">02</span> CREW</a>
+          <a href="./technology-vehicle.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">03</span> TECHNOLOGY</a>
+        </ul>
+      </div>
+
+      <!-- icon view only on mobile view  -->
+
+      <div class="three_bars hidden cursor-pointer">
+        <i class="fa-solid fa-bars text-[30px] mr-[2rem] text-[#ffffff]"></i>
+      </div>
+
+
+      <div class="mobile_nav absolute w-[254px] h-[100vh] hidden flex-col justify-start gap-[3rem] bg-blur right-0 top-0 bottom-0">
+        <!-- icon -->
+        <button class="mt-[2rem] text-right" onclick="closeNav()">
+          <i class="fa-solid fa-xmark text-[#ffffff] text-[30px] mr-[3rem]"></i>
+        </button>
+        <!-- nav -->
+        <ul class="flex flex-col gap-[1rem] pl-[1rem]">
+          <a href="./index.html" class="text-[#D0D6F9] h-full flex gap-[6px] items-center border-r-2 border-white"><span class="font-bold text-white ">00</span> HOME</a>
+          <a href="./destination-moon.html" class="text-[#D0D6F9]" ><span class="font-bold text-white ">01</span> DESTINATION</a>
+          <a href="./crew-commander.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">02</span> CREW</a>
+          <a href="./technology-vehicle.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">03</span> TECHNOLOGY</a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- main contain  -->
+    <div class="w-[84%] h-[382px] flex justify-between items-end mb-[3rem]
+      main_contant">
+      <!-- left box -->
+      <div class="w-[450px] h-[382px] flex flex-col items-start gap-[1rem]
+        leftBox">
+        <h3 class="text-[28px] uppercase text-[#D0D6F9]
+          wantToTravel">
+          So, you want to travel to</h3>
+        <h1 class="text-[150px] uppercase text-[#FFFFFF]">Space</h1>
+        <p class="text-[18px] text-[#D0D6F9]
+          description">Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!</p>
+      </div>
+
+      <!-- right box -->
+      <div class="w-[274px] h-[274px] bg-white rounded-[100%] flex justify-center items-center
+        circle">
+        <a href="./destination-moon.html">
+          <p class="text-black uppercase text-[32px]">EXPLOR</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let three_bars = document.querySelector(".three_bars");
+    let mobile_nav = document.querySelector('.mobile_nav');
+    
+    three_bars.addEventListener('click', function() {
+      mobile_nav.style.display = 'flex';
+    })
+
+    function closeNav(){
+      mobile_nav.style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
