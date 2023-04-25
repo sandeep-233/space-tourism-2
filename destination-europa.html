@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/index-dab80da2.css">
+
+  <script src="https://kit.fontawesome.com/46ca7f7c08.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  
+  <div id="wrapper" class="w-[100vw] h-[100vh] overflow-x-hidden overflow-y-scroll bg-destination flex flex-col justify-between items-center">
+    <!-- header  -->
+    <div class="w-full h-[4rem] flex flex-row justify-between items-center relative mt-[1.6rem]
+      header">
+
+      <img src="./assets/shared/logo.svg" alt="" class="ml-3">
+
+      <div class="w-[476px] bg-slate-300 absolute left-[167px] h-[0.96px] z-10
+       bar"></div>
+
+      <div class="w-[836.59px] h-[92px] flex bg-blur justify-center items-center
+       blurBox">
+        <ul class="w-[546px] h-full flex justify-center items-center gap-[3rem]
+         navBox">
+          <a href="./index.html" class="text-[#D0D6F9] "><span class="font-bold text-white">00</span> HOME</a>
+          <a href="./destination-moon.html" class="text-[#D0D6F9] h-full flex gap-[6px] items-center border-b-2 border-white" ><span class="font-bold text-white">01</span> DESTINATION</a>
+          <a href="./crew-commander.html" class="text-[#D0D6F9]"><span class="font-bold text-white">02</span> CREW</a>
+          <a href="./technology-vehicle.html" class="text-[#D0D6F9]"><span class="font-bold text-white">03</span> TECHNOLOGY</a>
+        </ul>
+      </div>
+
+      <!-- icon view only on mobile view  -->
+
+      <div class="three_bars hidden cursor-pointer">
+        <i class="fa-solid fa-bars text-[30px] mr-[2rem] text-[#ffffff]"></i>
+      </div>
+
+      <div class="mobile_nav absolute w-[254px] h-[100vh] hidden flex-col justify-start gap-[3rem] bg-blur right-0 top-0 bottom-0">
+        <!-- icon -->
+        <button class="mt-[2rem] text-right" onclick="closeNav()">
+          <i class="fa-solid fa-xmark text-[#ffffff] text-[30px] mr-[3rem]"></i>
+        </button>
+        <!-- nav -->
+        <ul class="flex flex-col gap-[1rem] pl-[1rem]">
+          <a href="./index.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">00</span> HOME</a>
+          <a href="./destination-moon.html" class="text-[#D0D6F9] h-full flex gap-[6px] items-center border-r-2 border-white" ><span class="font-bold text-white ">01</span> DESTINATION</a>
+          <a href="./crew-commander.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">02</span> CREW</a>
+          <a href="./technology-vehicle.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">03</span> TECHNOLOGY</a>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- heading  -->
+    <div class="text-[28px] text-[#FFFFFF] w-[82%]
+      heading">
+      <p class="uppercase"><span class="font-bold text-gray-700">01</span> Pick your destination</p>
+    </div>
+
+    <!-- contant -->
+    <div class="flex flex-row w-full justify-around items-start
+      content">
+      <!-- image  -->
+      <img src="./assets/destination/image-moon.png" alt="" class="w-[445px] h-[445px]">
+
+      <!-- details  -->
+      <div class="w-[445px] h-[472px] flex flex-col justify-evenly items-start
+       details">
+        <ul class="flex gap-[1rem] uppercase">
+          <a href="./destination-moon.html" class="text-[#D0D6F9]">Moon</a>
+          <a href="./destination-mars.html" class="text-[#D0D6F9]">Mars</a>
+          <a href="./destination-europa.html" class="text-[#FFFFFF] border-b pb-1">Europa</a>
+          <a href="./destination-titan.html" class="text-[#D0D6F9]">Titan</a>
+        </ul>
+
+        <!-- title  -->
+        <h1 class="text-[100px] text-[#FFFFFF] uppercase
+          title">Europa</h1>
+
+        <!-- description -->
+        <p class="text-[18px] text-[#D0D6F9]">
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+  ice skating, curling, hockey, or simple relaxation in your snug 
+  wintery cabin.
+        </p>
+        
+        <hr class="bg-[#383B4B] w-full mt-[1rem]">
+
+        <div class="flex items-start gap-[6rem] uppercase
+          distance_time">
+          <div class="flex flex-col justify-center items-start">
+            <p class="text-[14px] text-[#D0D6F9]">Avg. distance</p>
+            <p class="text-[28px] text-[#FFFFFF]">628 mil. km</p>
+          </div>
+          <!-- right -->
+          <div class="flex flex-col justify-center items-start">
+            <p class="text-[14px] text-[#D0D6F9]">Est. travel time</p>
+            <p class="text-[28px] text-[#FFFFFF]">3 years</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let three_bars = document.querySelector(".three_bars");
+    let mobile_nav = document.querySelector('.mobile_nav');
+    
+    three_bars.addEventListener('click', function() {
+      mobile_nav.style.display = 'flex';
+    })
+
+    function closeNav(){
+      mobile_nav.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

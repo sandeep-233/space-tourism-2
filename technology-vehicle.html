@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="/assets/index-dab80da2.css">
+  <script src="https://kit.fontawesome.com/46ca7f7c08.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+
+  <div id="wrapper" class="w-[100vw] h-[100vh] overflow-x-hidden overflow-y-scroll bg-technology flex flex-col justify-between items-center">
+    <!-- header  -->
+    <div class="w-full h-[4rem] flex flex-row justify-between items-center relative mt-[1.6rem]
+      header">
+
+      <img src="./assets/shared/logo.svg" alt="" class="ml-3">
+
+      <div class="w-[476px] bg-slate-300 absolute left-[167px] h-[0.96px] z-10
+       bar"></div>
+
+      <div class="w-[836.59px] h-[92px] flex bg-blur justify-center items-center
+       blurBox">
+        <ul class="w-[546px] h-full flex justify-center items-center gap-[3rem]
+         navBox">
+          <a href="./index.html" class="text-[#D0D6F9] "><span class="font-bold text-white">00</span> HOME</a>
+          <a href="./destination-moon.html" class="text-[#D0D6F9]" ><span class="font-bold text-white">01</span> DESTINATION</a>
+          <a href="./crew-commander.html" class="text-[#D0D6F9]"><span class="font-bold text-white">02</span> CREW</a>
+          <a href="./technology-vehicle.html" class="text-[#D0D6F9] h-full flex gap-[6px] items-center border-b-2 border-white"><span class="font-bold text-white">03</span> TECHNOLOGY</a>
+        </ul>
+      </div>
+
+      <!-- icon view only on mobile view  -->
+
+      <div class="three_bars hidden cursor-pointer">
+        <i class="fa-solid fa-bars text-[30px] mr-[2rem] text-[#ffffff]"></i>
+      </div>
+
+      <div class="mobile_nav absolute w-[254px] h-[100vh] hidden flex-col justify-start gap-[3rem] bg-blur right-0 top-0 bottom-0">
+        <!-- icon -->
+        <button class="mt-[2rem] text-right" onclick="closeNav()">
+          <i class="fa-solid fa-xmark text-[#ffffff] text-[30px] mr-[3rem]"></i>
+        </button>
+        <!-- nav -->
+        <ul class="flex flex-col gap-[1rem] pl-[1rem]">
+          <a href="./index.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">00</span> HOME</a>
+          <a href="./destination-moon.html" class="text-[#D0D6F9]" ><span class="font-bold text-white ">01</span> DESTINATION</a>
+          <a href="./crew-commander.html" class="text-[#D0D6F9]"><span class="font-bold text-white ">02</span> CREW</a>
+          <a href="./technology-vehicle.html" class="text-[#D0D6F9] h-full flex gap-[6px] items-center border-r-2 border-white"><span class="font-bold text-white ">03</span> TECHNOLOGY</a>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- heading  -->
+    <div class="text-[28px] text-[#FFFFFF] w-[82%]
+      heading">
+      <p class="uppercase"><span class="font-bold text-gray-700">03</span> Space launch 101</p>
+    </div>
+
+    <!-- contant -->
+    <div class="flex flex-row w-full justify-end items-start gap-[11rem] mb-[4rem]
+      tech_content">
+      <!-- left box  -->
+      <div class="w-[50%] h-full flex flex-row justify-between items-center gap-[3rem]
+        leftBox">
+        <!-- switch buttons  -->
+        <ul class="flex flex-col gap-9
+          tech_navbar">
+          <a href="./technology-vehicle.html" class="w-[80px] h-[80px] rounded-[100%] flex justify-center items-center text-[32px] text-[#0B0D17] bg-white border">1</a>
+          <a href="./technology-spaceport.html" class="w-[80px] h-[80px] rounded-[100%] flex justify-center items-center text-center text-[32px] text-[#FFFFFF] border">2</a>
+          <a href="./technology-capsule.html" class="w-[80px] h-[80px] rounded-[100%] flex justify-center items-center text-center text-[32px] text-[#FFFFFF] border">3</a>
+        </ul>
+
+        <!-- details  -->
+        <div class="flex flex-col gap-3 text-white
+          details">
+          <p class="text-[16px] uppercase text-[#D0D6F9]">
+            The terminology...
+          </p>
+
+          <h3 class="text-[56px] uppercase
+            tech_gadget">
+            Launch vehicle
+          </h3>
+
+          <p class="text-[18px] text-[#D0D6F9] w-[80%]">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!
+          </p>
+        </div>
+      </div>
+
+      <!-- right box  -->
+      <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="" class="w-[400px] image">
+
+    </div>
+  </div>
+
+  <script>
+    let three_bars = document.querySelector(".three_bars");
+    let mobile_nav = document.querySelector('.mobile_nav');
+    
+    three_bars.addEventListener('click', function() {
+      mobile_nav.style.display = 'flex';
+    })
+
+    function closeNav(){
+      mobile_nav.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
